@@ -1,7 +1,7 @@
-## Challenge `php-foo`
-===
+# Challenge `php-foo`
 
-# Application:
+
+## Application:
 
 The application stores secret records with the following opitons:
 
@@ -23,7 +23,7 @@ if we look into the code from `troll.php`, we see that messages wont be encrypte
 furthermore we see a possible injection in `crypto.php`
 ![not encrypted](injection.png)
 
-# Exploit:
+## Exploit:
 
 to exploit the vulernability, we decided to do a multistage payload.
 
@@ -64,7 +64,7 @@ _pkey = 're1n3r'+str(int(time.time()))
 ```
 
 
-# Final exploit
+## Final exploit
 
 ```python
 from pwn import *
